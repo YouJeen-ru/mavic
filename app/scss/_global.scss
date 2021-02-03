@@ -34,6 +34,9 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #fff;
+  @extend %ubuntu-light;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .container {
@@ -53,6 +56,11 @@ body {
 }
 
 .title {
+  @extend %sf-regular;
+  font-size: 44px;
+  line-height: 53px;
+  padding-left: 25px;
+  margin-bottom: 55px;
 
 }
 
