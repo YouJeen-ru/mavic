@@ -498,6 +498,23 @@
   }
 }
 
+.footer {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  &__copy,
+  &__name {
+    text-align: right;
+    font-size: 13px;
+    height: 15px;
+    color: rgba(#fff .64)
+  }
+  &__name {
+    font-weight: bold;
+  }
+}
+
 
 
 
