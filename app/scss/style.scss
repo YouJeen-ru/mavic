@@ -9,6 +9,7 @@
   top: 30px;
   right: 0;
   z-index: 10;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@
     @extend %ubuntu-medium;
 
   }
+
   &__btn {
     color: #fff;
     background-color: transparent;
@@ -30,11 +32,13 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: all .3s;
+
     &:hover {
       color: #000;
       background-color: #fff;
     }
   }
+
   &__phone {
     font-size: 16px;
     line-height: 18px;
@@ -43,17 +47,27 @@
 }
 
 .menu {
-&__list-item {
-  display: inline-block;
-  & + .menu__list-item {
-    padding-left: 20px;
+  &__list-item {
+    display: inline-block;
+
+    & + .menu__list-item {
+      padding-left: 20px;
+    }
+  }
+
+  &__list-phone {
+    display: none;
+  }
+
+  &__btn {
+    display: none;
   }
 }
-}
 
-.top{
+.top {
   background-image: url('../images/top-bg.jpg');
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -63,34 +77,41 @@
     background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
     opacity: 0.4;
   }
-  &__wrapper{
+
+  &__wrapper {
     display: flex;
     align-items: flex-end;
   }
-  &__inner{
+
+  &__inner {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-  &__title{
+
+  &__title {
     font-size: 96px;
     line-height: 115px;
     @extend %sf-semibold;
     margin-bottom: 25px;
   }
-  &__text{
+
+  &__text {
     margin: 25px 0 35px;
     max-width: 325px;
   }
-  &__social-item{
+
+  &__social-item {
     display: inline-block;
     margin: 0 25px;
   }
-  &__social-link{
+
+  &__social-link {
     opacity: 0.5;
-    transition:  all .3s;
-    &:hover{
+    transition: all .3s;
+
+    &:hover {
       opacity: 1;
     }
   }
@@ -102,16 +123,20 @@
     justify-content: space-between;
     padding-left: 50px;
   }
+
   &__text {
     max-width: 440px;
+
     p {
       margin-bottom: 30px;
     }
   }
+
   &__slider-box {
     position: relative;
     padding-top: 110px;
   }
+
   &__slider-text {
     width: 285px;
     position: absolute;
@@ -123,8 +148,10 @@
     left: -250px;
     z-index: 5;
   }
+
   &__slider {
     max-width: 560px;
+
     &::before {
       content: '';
       position: absolute;
@@ -147,14 +174,18 @@
   z-index: 5;
   bottom: -45px;
   outline: none;
+
   svg {
     stroke: #000;
   }
+
   &__left {
     right: 60px;
   }
+
   &.slick-disabled {
     background-color: #000;
+
     svg {
       stroke: #fff;
     }
@@ -167,23 +198,29 @@
     flex-wrap: wrap;
     padding-left: 25px;
   }
+
   &__item {
     margin-bottom: 100px;
     display: flex;
     align-items: flex-end;
+
     &:nth-child(even) {
       margin-left: 40px;
       transform: translateY(20px);
     }
+
     &:nth-child(3) {
       margin-left: 30px;
     }
+
     &:nth-child(4) {
       margin-left: 60px;
     }
+
     &:first-child,
     &:nth-child(3) {
       position: relative;
+
       &::before,
       &::after {
         content: '';
@@ -192,6 +229,7 @@
         background-position: 0 0;
       }
     }
+
     &:first-child {
       &::before {
         height: 48px;
@@ -201,6 +239,7 @@
         top: 31px;
       }
     }
+
     &:nth-child(3) {
       &:before {
         background-image: url('../images/line-3.svg');
@@ -209,6 +248,7 @@
         right: -55px;
         top: 50px;
       }
+
       &::after {
         background-image: url('../images/line-2.svg');
         width: 463px;
@@ -225,9 +265,11 @@
     @extend %ubuntu-bold;
     margin-right: 10px;
   }
+
   &__img {
     position: relative;
     margin-right: 32px;
+
     &::before {
       content: '';
       position: absolute;
@@ -239,9 +281,11 @@
       z-index: -1;
     }
   }
+
   &__info {
     width: 300px;
   }
+
   &__info-title {
     width: 123px;
     font-size: 21px;
@@ -249,28 +293,32 @@
     @extend %ubuntu-bold;
     margin-bottom: 10px;
   }
+
   &__info-text {
     font-size: 15px;
     line-height: 18px;
   }
 }
 
-.specification{
-  &__inner{
+.specification {
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 25px;
   }
-  &__item-center{
+
+  &__item-center {
     margin-left: -15px;
     margin-right: -15px;
   }
-  &__box{
+
+  &__box {
     width: 280px;
     position: relative;
     margin-top: 10px;
-    &:before{
+
+    &:before {
       content: '';
       position: absolute;
       background-repeat: no-repeat;
@@ -278,34 +326,40 @@
       background-size: contain;
     }
   }
-  &__box-2{
+
+  &__box-2 {
     margin-top: 140px;
   }
-  &__box-4{
+
+  &__box-4 {
     margin-top: 160px;
   }
-  &__box-1::before{
+
+  &__box-1::before {
     background-image: url('../images/pointer-1.svg');
     width: 229px;
     height: 114px;
     right: -140px;
     top: 16px;
   }
-  &__box-2::before{
+
+  &__box-2::before {
     background-image: url('../images/pointer-2.svg');
     width: 345px;
     height: 81px;
     right: -300px;
     top: -65px;
   }
-  &__box-3::before{
+
+  &__box-3::before {
     background-image: url('../images/pointer-3.svg');
     width: 258px;
     height: 103px;
     left: -299px;
     top: 16px;
   }
-  &__box-4::before{
+
+  &__box-4::before {
     background-image: url('../images/pointer-4.svg');
     width: 124px;
     height: 89px;
@@ -313,13 +367,14 @@
     top: -73px;
   }
 
-  &__box-title{
+  &__box-title {
     line-height: 28px;
     font-size: 21px;
     @extend %ubuntu-bold;
     margin-bottom: 10px;
   }
-  &__box-text{
+
+  &__box-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
@@ -332,10 +387,12 @@
     max-width: 757px;
     padding-bottom: 15px;
   }
-  &__item{
+
+  &__item {
     background-color: rgba(0, 0, 0, 0.3);
     max-width: 690px;
     position: relative;
+
     &:nth-child(3)::before {
       content: '';
       position: absolute;
@@ -346,6 +403,7 @@
       background-image: url('../images/questions-bg.png');
     }
   }
+
   &__item-title {
     font-size: 21px;
     line-height: 28px;
@@ -355,6 +413,7 @@
     position: relative;
     margin-bottom: 4px;
     cursor: pointer;
+
     &::after {
       content: url('../images/accordion-arrow.svg');
       position: absolute;
@@ -369,6 +428,7 @@
 
     }
   }
+
   &__item-text {
     padding: 0 5px 75px 50px;
     font-size: 15px;
@@ -378,10 +438,12 @@
     transition: all .3s;
 
   }
+
   &__item.questions__item--active {
-    .questions__item-title::after{
+    .questions__item-title::after {
       transform: rotate(180deg);
     }
+
     .questions__item-text {
       display: block;
       margin-bottom: 4px;
@@ -390,53 +452,63 @@
 }
 
 .contacts {
-  &__inner{
+  &__inner {
     display: flex;
     padding-left: 25px;
   }
-  &__info{
+
+  &__info {
     width: 240px;
     margin-right: 60px;
 
   }
+
   &__info-box {
     margin-bottom: 30px;
   }
-  &__info-title{
+
+  &__info-title {
     line-height: 24px;
     font-size: 21px;
     @extend %ubuntu-bold;
     margin: 0 0 13px;
   }
+
   &__info-phone,
-  &__info-email{
+  &__info-email {
     line-height: 18px;
     font-size: 15px;
 
   }
+
   &__info-email:hover {
     text-decoration: underline;
   }
+
   &__form {
     width: 570px;
     margin-right: 106px;
   }
+
   &__form-title {
     line-height: 24px;
     font-size: 21px;
     @extend %ubuntu-bold;
     margin: 0 0 13px;
   }
+
   &__form-text {
     line-height: 18px;
     font-size: 15px;
     margin: 0 0 12px;
   }
+
   &__form-line {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
   }
+
   &__form-input,
   &__form-textarea {
     border: none;
@@ -446,8 +518,9 @@
     font-size: 13px;
     line-height: 15px;
     color: #fff;
+
     &::placeholder {
-      color: rgba(#fff,.4)
+      color: rgba(#fff, .4)
     }
   }
 
@@ -455,6 +528,7 @@
     width: 49%;
 
   }
+
   &__form-textarea {
     min-height: 144px;
     width: 100%;
@@ -462,6 +536,7 @@
     margin-bottom: 20px;
 
   }
+
   &__form-btn {
     text-transform: uppercase;
     font-size: 14px;
@@ -475,23 +550,28 @@
     background-color: transparent;
     cursor: pointer;
     transition: all .3s;
+
     &:hover {
       color: #000000;
       background-color: #fff;
 
     }
   }
+
   &__social-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   &__social-item {
     margin: 14px 0;
   }
+
   &__social-link {
     opacity: 0.5;
     transition: all .3s;
+
     &:hover {
       opacity: 1;
     }
@@ -503,6 +583,7 @@
   bottom: 2px;
   left: 0;
   right: 0;
+
   &__copy,
   &__name {
     text-align: right;
@@ -510,14 +591,11 @@
     height: 15px;
     color: gba(#fff .64)
   }
+
   &__name {
     font-weight: bold;
   }
 }
-
-
-
-
 
 
 @import "media";
